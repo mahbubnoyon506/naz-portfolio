@@ -7,8 +7,8 @@ const navigation = [
   ['Home', '#home'],
   ['Experience', '#experience'],
   ['Work', '#work'],
+  ['Expertise', '#expertise'],
   ['Skills', '#skills'],
-  ['Reviews', '#reviews'],
   ['FAQ', '#faq'],
   ['Contact', '#contact'],
 ]

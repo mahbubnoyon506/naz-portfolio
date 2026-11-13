@@ -3,13 +3,13 @@ import { Footer, Header } from '@/components/layout'
 import {
   ContactSection,
   EducationSection,
+  ExpertiseSection,
   ExperienceSection,
   FAQSection,
   HeroSection,
   ProjectsSection,
   SkillsSection,
   StatsSection,
-  TestimonialsSection,
 } from '@/components/sections'
 
 export default function App() {
@@ -21,9 +21,9 @@ export default function App() {
         <StatsSection />
         <ExperienceSection />
         <ProjectsSection />
+        <ExpertiseSection />
         <EducationSection />
         <SkillsSection />
-        <TestimonialsSection />
         <FAQSection />
         <ContactSection />
       </main>

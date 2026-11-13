@@ -65,6 +65,159 @@
   font-weight: 700;
 }
 
+.hero-location {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 5px;
+  color: #77707b;
+  font-size: 11px;
+}
+
+.hero-location svg {
+  width: 14px;
+  height: 14px;
+  color: var(--purple);
+}
+
+.skill-row {
+  grid-template-columns: 220px 1fr;
+  align-items: start;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.skill-label {
+  padding-top: 6px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.skill-label small {
+  display: block;
+  margin-top: 7px;
+  color: #a39ba5;
+  font: 700 8px 'DM Sans', sans-serif;
+  letter-spacing: 0.15em;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tool {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 7px 11px;
+  border: 1px solid #e7e2e9;
+  border-radius: 30px;
+  background: #fbf9fc;
+  color: #625c66;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 13px;
+}
+
+.expertise-card {
+  padding: 23px;
+  border: 1px solid #e9e5ec;
+  border-radius: 13px;
+  background: rgba(255, 255, 255, 0.66);
+  box-shadow: 0 9px 24px rgba(55, 38, 69, 0.055);
+}
+
+.expertise-number {
+  color: #9c939f;
+  font: italic 14px var(--serif);
+}
+
+.expertise-card h3,
+.additional-specialties h3 {
+  margin: 12px 0 9px;
+  color: var(--ink);
+  font: 400 20px/1.2 var(--serif);
+}
+
+.expertise-card p {
+  margin: 0;
+  color: #79747b;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.expertise-card .tags {
+  margin-top: 14px;
+}
+
+.additional-specialties {
+  margin-top: 24px;
+  padding: 22px 24px;
+  border: 1px solid #e9e5ec;
+  border-radius: 13px;
+  background: rgba(255, 255, 255, 0.48);
+}
+
+.additional-specialties h3 {
+  margin-top: 0;
+}
+
+.resume-subheading {
+  margin: 30px 0 14px;
+  font: 400 21px var(--serif);
+}
+
+.project-meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.contact-detail {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+  color: #39343c;
+  font-size: 13px;
+}
+
+.contact-detail > svg:first-child {
+  width: 17px;
+  height: 17px;
+  flex: none;
+  color: var(--purple);
+}
+
+.contact-detail > svg:last-child {
+  width: 14px;
+  height: 14px;
+  flex: none;
+  margin-left: auto;
+  color: #8e8693;
+}
+
+.contact-detail span {
+  display: grid;
+  gap: 5px;
+}
+
+.contact-detail small {
+  color: #9a939c;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
 .direct-links a {
   display: inline-flex;
   align-items: center;
@@ -83,5 +236,21 @@
 
   .faq-item [data-radix-accordion-content][data-state='open'] {
     animation: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .skill-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .expertise-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .expertise-card,
+  .additional-specialties {
+    padding: 18px;
   }
 }
